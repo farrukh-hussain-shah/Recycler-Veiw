@@ -1,0 +1,35 @@
+first we put recyclerview in xml
+then
+we make a resource file called recycler_veiw_item.xml
+then
+in recycler view we "tools:listitem="@layout/recycler_view_item"" and then we create an adapter
+adapter is like a bridge btw both
+
+Adapter
+    According to Lectures
+    ist we created a data class of ExampleItems
+    then we create a adapter file
+    in this fist we  bind both class (ExampleItem &  RecyclerView.Adapter)
+    and we created an inner class class called ViewHolder
+
+
+    And this showing an error in this  class (ExampleItem &  RecyclerView.Adapter)
+    we then override all the members
+
+    And in view ExampleViewHolder class we connect widget of our recycler_view_item.xml
+
+    onCreateViewHolder
+    it used to find what are item list are used in this code you haven't to remember code
+
+    onBindViewHolder
+    it is used to bind the item
+
+    getItemCount
+    this is used to set the max the lenght of recyclerView
+
+     android:clickable="true"
+        android:focusable="true"    TODO this is used to add ripple effect
+        android:foreground="?android:attr/selectableItemBackground"
+
+        And at the we setOnClickListener to jump to Activity code
+        and this was defined in Adapter.ExampleItem
